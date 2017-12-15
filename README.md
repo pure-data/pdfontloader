@@ -22,7 +22,7 @@ It is intended to be used within the Pd GUI in order to load a local font via:
 
 References:
 
+* [[TCLCORE] PRIVATE FONT-FILES IN TCLTK](http://code.activestate.com/lists/tcl-core/8159/)
 * [Hello World TCL C extension](http://wiki.tcl.tk/11153)
 * [extrafont](http://wiki.tcl.tk/48903)
 * [Pd: DejaVu Sans Mono as default font crossplatform](https://github.com/pure-data/pure-data/pull/42)
-
