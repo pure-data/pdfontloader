@@ -10,6 +10,8 @@ To build, run `make`. You may need to specify the version and location of Tcl vi
 
 ...or edit the variables above in the Makefile.
 
+The version of Tcl this is compiled against should match the version that is used by the Pd gui. The easiest method is to point this Makefile to use the Tcl included with the Pd Windows release or unpack the pdprototype.tgz in the `msw` folder from the Pd source Git repo. 
+
 The result should be a pdloader.dll extension that can be opened in Tcl. There is currently one command:
 
     pdloader::loadfont FILENAME
