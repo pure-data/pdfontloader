@@ -10,7 +10,7 @@ To build, run `make`. You may need to specify the version and location of Tcl vi
 
 ...or edit the variables above in the Makefile.
 
-The result should be a pdloader.dll externion that can be opened in Tcl. There is currently one command:
+The result should be a pdloader.dll extension that can be opened in Tcl. There is currently one command:
 
     pdloader::loadfont FILENAME
 
