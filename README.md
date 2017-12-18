@@ -4,6 +4,8 @@ tiny TCL extension to load fonts into the Pure Data GUI on Windows
 
 *not currently working*
 
+![test window](https://github.com/pure-data/pdloader/raw/master/docs/test.png)
+
 To build, run `make`. You may need to specify the version and location of Tcl via:
 
     make TCL_VERSION=8.5 TCL_LIB_VERSION=85 TCL_INCLUDE=../path/to/tcl/include TCL_LIB=../path/to/tcl/lib
@@ -18,7 +20,12 @@ The result should be a pdloader.dll extension that can be opened in Tcl. There i
 
 It is intended to be used within the Pd GUI in order to load a local font via:
 
-    catch {pdloader::loadfont ../font/DejaVuSansMono.ttf}
+    catch {
+        load pdloader.dll 
+        pdloader::loadfont ../font/DejaVuSansMono.ttf
+    }
+
+This should add the following font family name to the list of available fonts returned by `[font families]`: "DejaVu Sans Mono."
 
 References:
 
