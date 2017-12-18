@@ -49,7 +49,7 @@ Once built:
 3. edit `tcl/pd-gui.tcl` and add the following at the end of the "win32" section of "init_for_platform" procedure:
 
 ~~~
-			# load local font
+            # load local font
             if {[file exists [file join "$::sys_libdir" "font"]]} {
                 catch {
                     load [file join "$::sys_libdir" "bin/pdfontloader.dll"]
