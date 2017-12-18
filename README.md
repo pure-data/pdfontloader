@@ -4,7 +4,7 @@ tiny TCL extension to load fonts into the Pure Data GUI on Windows
 
 *not currently working*
 
-![test window](https://github.com/pure-data/pdloader/raw/master/docs/test.png)
+![test window](https://github.com/pure-data/pdloader/raw/master/doc/test.png)
 
 To build, run `make`. You may need to specify the version and location of Tcl via:
 
