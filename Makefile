@@ -2,7 +2,8 @@
 
 CC = gcc
 
-SOURCES = pdloader.c
+RESULT = pdfontloader.dll
+SOURCES = pdfontloader.c
 
 TCL_VERSION = 8.6
 TCL_LIB_VERSION = 86
@@ -14,13 +15,13 @@ LDFLAGS = -L$(TCL_LIB) -ltclstub$(TCL_LIB_VERSION) -lgdi32
 
 .PHONY: strip
 
-all: pdloader.dll
+all: $(RESULT)
 
-pdloader.dll:
-	$(CC) -Wall -shared -o pdloader.dll $(CFLAGS) $(SOURCES) $(LDFLAGS)
+$(RESULT):
+	$(CC) -Wall -shared -o $(RESULT) $(CFLAGS) $(SOURCES) $(LDFLAGS)
 
 strip:
-	strip pdloader.dll
+	strip $(RESULT)
 
 clean:
-	rm -rf pdloader.dll
+	rm -rf $(RESULT)
