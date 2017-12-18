@@ -29,7 +29,7 @@ This should add the following font family name to the list of available fonts re
 
 References:
 
+* [[TCLCORE] PRIVATE FONT-FILES IN TCLTK](http://code.activestate.com/lists/tcl-core/8159/)
 * [Hello World TCL C extension](http://wiki.tcl.tk/11153)
 * [extrafont](http://wiki.tcl.tk/48903)
 * [Pd: DejaVu Sans Mono as default font crossplatform](https://github.com/pure-data/pure-data/pull/42)
-
