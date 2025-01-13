@@ -60,7 +60,16 @@ Once built:
             }
 ~~~
 
-References:
+### Testing without Pd
+
+Once pdfontloader has been built, simply run `wish.exe test.tcl /path/to/font.ttf`, e.g:
+
+```sh
+C:\Pd\bin\wish86.exe test.tcl C:\Pd\font\DejaVuSansMono.ttf
+```
+
+
+## References:
 
 * [[TCLCORE] PRIVATE FONT-FILES IN TCLTK](http://code.activestate.com/lists/tcl-core/8159/)
 * [Hello World TCL C extension](http://wiki.tcl.tk/11153)
