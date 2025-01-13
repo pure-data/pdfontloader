@@ -1,5 +1,7 @@
 #!/usr/bin/env make
 
+STRIP = strip
+
 RESULT = pdfontloader.dll
 SOURCES = pdfontloader.c
 
@@ -38,7 +40,7 @@ $(RESULT): $(SOURCES)
 	$(CC) -Wall -shared -o $(RESULT) $(CFLAGS) $^ $(LDFLAGS)
 
 strip: $(RESULT)
-	strip $(RESULT)
+	$(STRIP) $(RESULT)
 
 clean:
 	rm -rf $(RESULT)
