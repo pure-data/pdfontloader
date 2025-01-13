@@ -1,7 +1,5 @@
 # TODO: handle the TCL paths & version better
 
-CC = gcc
-
 RESULT = pdfontloader.dll
 SOURCES = pdfontloader.c
 
