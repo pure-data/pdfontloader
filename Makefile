@@ -37,7 +37,7 @@ all: $(RESULT)
 $(RESULT): $(SOURCES)
 	$(CC) -Wall -shared -o $(RESULT) $(CFLAGS) $^ $(LDFLAGS)
 
-strip:
+strip: $(RESULT)
 	strip $(RESULT)
 
 clean:
