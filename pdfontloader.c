@@ -6,6 +6,10 @@
 #include <windows.h>
 #include <wingdi.h>
 
+#if TCL_MAJOR_VERSION < 9
+typedef int Tcl_Size;
+#endif
+
 static int
 Pdfontloader_load(ClientData cdata, Tcl_Interp *interp,
                   int objc, Tcl_Obj *const objv[]) {
@@ -15,7 +19,8 @@ Pdfontloader_load(ClientData cdata, Tcl_Interp *interp,
     }
     Tcl_DString ds;
     Tcl_Encoding unicode;
-    int pathlen = 0, ret = TCL_OK;
+    Tcl_Size pathlen = 0;
+    int ret = TCL_OK;
     const char *path = Tcl_GetStringFromObj(objv[1], &pathlen);
     Tcl_DStringInit(&ds);
     unicode = Tcl_GetEncoding(interp, "unicode");
